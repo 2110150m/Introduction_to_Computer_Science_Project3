@@ -17,9 +17,9 @@ CHIP PC {
 
     PARTS:
     
-    Inc16(in=regout,out=incd);
+    Inc16(in=regout,out=incr);
 
-	Mux16(a=regout,b=incd,sel=inc,out=incout);
+	Mux16(a=regout,b=incr,sel=inc,out=incout);
 
 	Mux16(a=incout,b=in,sel=load,out=lout);
 
